@@ -65,6 +65,7 @@
 	<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h1>
 
       <pre>
+
 Usage: check_ssl_cert -H host [OPTIONS]
 
 Arguments:
@@ -130,6 +131,7 @@ Options:
    -n,--cn name                    pattern to match the CN of the certificate (can be
                                    specified multiple times)
       --nmap-bin path              path of the nmap binary to be used
+      --no-proxy                   ignores the http_proxy and https_proxy environment variables
       --no_ssl2                    disable SSL version 2
       --no_ssl3                    disable SSL version 3
       --no_tls1                    disable TLS version 1
@@ -178,7 +180,7 @@ Options:
       --temp dir                   directory where to store the temporary files
       --terse                      terse output
    -t,--timeout                    seconds timeout after the specified time
-                                   (defaults to 15 seconds)
+                                   (defaults to 120 seconds)
       --tls1                       force TLS version 1
       --tls1_1                     force TLS version 1.1
       --tls1_2                     force TLS version 1.2
